@@ -23,3 +23,8 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 > npm install
 > npm start
 ```
+
+### Install
+
+1. redux-promise@0.5.0
+2. axios@0.8.1
