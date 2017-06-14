@@ -7,24 +7,22 @@ class SearchBar extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {term: ''};
+        this.state = { term: '' };
 
         this.onInputChange = this.onInputChange.bind(this);
-        this.onFormSubmit = this.onInputChange.bind(this);
+        this.onFormSubmit = this.onFormSubmit.bind(this);
     }
 
-    onInputChange(event) {
-        // console.log(event.target.value);
+    onInputChange(event) {        
         this.setState({term: event.target.value})
     }
 
     onFormSubmit(event) {
-        event.preventDefault();
-
-        // we need to go and fetch weather data
-        this.props.fetchWeather(this.state.terms);
+        event.preventDefault();        
+        this.props.fetchWeather(this.state.term);
         this.setState({ term: ''});
     }
+
     render() {
         return (
             <form onSubmit={this.onFormSubmit} className="input-group">
@@ -47,3 +45,8 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(null, mapDispatchToProps)(SearchBar);
+
+
+
+
+
