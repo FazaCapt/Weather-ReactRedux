@@ -1,0 +1,31 @@
+import React, { Component } from 'react';
+import { connect } from 
+
+
+
+class WeatherList extends Component {
+    render() {
+        return (
+            <table className="table table-hover" >
+                <thead> 
+                    <tr>
+                        <th>City</th>
+                        <th>Temperature</th>
+                        <th>Pressure</th>
+                        <th>Humadity</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        )
+    }
+}
+
+function mapStateToProps({ weather }) {
+    // const weather = state.weather
+    return { weather };  // { weather } === { weather: weather }
+}
+
+export default connect(mapStateToProps)(WeatherList);
