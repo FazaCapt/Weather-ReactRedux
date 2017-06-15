@@ -28,3 +28,7 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 
 1. redux-promise@0.5.0
 2. axios@0.8.1
+3. react-sparklines@1.4.2
+
+### Documentation
+1. React SparkLine: https://github.com/borisyankov/react-sparklines
